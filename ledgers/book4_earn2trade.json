@@ -1,0 +1,15 @@
+{
+  "book_name": "Earn2Trade-style simulation",
+  "book_id": "book4_earn2trade",
+  "nominal_account_size_usd": 50000,
+  "execution_venue": "OKX Demo Trading (not yet traded)",
+  "honesty_disclosure": "Per docs/EARN2TRADE_RESEARCH_2026-11-12.md and strategies/registry.json, NO intraday strategy in the registry has a validated edge (orb_intraday_pilot and intraday_crypto_search_v2 both show no edge found / rejected). Opening a real position here with no validated signal would just be gambling dressed up as a 'book'. Per standing instruction never to fabricate an edge that doesn't exist, this book is intentionally kept FLAT (zero position) until either (a) a new intraday strategy passes blind validation in the registry, or (b) the user explicitly instructs us to run it anyway as a labeled no-edge experiment.",
+  "risk_rules": {
+    "max_daily_loss_pct": 4,
+    "max_total_drawdown_pct": 6,
+    "profit_target_pct": 6,
+    "note": "Rules modeled on typical Earn2Trade Gauntlet parameters, for future use once/if a strategy is activated."
+  },
+  "trades": [],
+  "status": "scaffolded, intentionally flat - no validated edge available"
+}

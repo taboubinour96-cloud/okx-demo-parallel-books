@@ -1,0 +1,40 @@
+{
+  "book_name": "Crypto $100 real demo book (funding-carry)",
+  "book_id": "book3_crypto",
+  "nominal_account_size_usd": 100,
+  "execution_venue": "OKX Demo Trading (simulated-trading header)",
+  "strategy": "funding_carry_btc_eth",
+  "registry_status": "PASS - candidate for live demo (blind PF 1.72, Sharpe 4.33, DD -2.0%)",
+  "honesty_disclosure": "This is the only book running on a registry-validated, blind-tested strategy. Delta-neutral: long BTC spot + short BTC perpetual swap, profiting from the funding rate paid by longs to shorts.",
+  "trades": [
+    {
+      "leg": "long_spot",
+      "clOrdId": "book3cryptoentry01",
+      "ordId": "4114400315843637249",
+      "instId": "BTC-USDT",
+      "side": "buy",
+      "tdMode": "cash",
+      "sz_usdt_spent": 100,
+      "fillSz_btc": 0.00158958,
+      "avgPx": 62127.4,
+      "timestamp_utc": "2026-11-19T20:24:44Z",
+      "state": "filled"
+    },
+    {
+      "leg": "short_swap_hedge",
+      "clOrdId": "book3cryptohedge01",
+      "ordId": "4114424688843517953",
+      "instId": "BTC-USDT-SWAP",
+      "side": "sell",
+      "tdMode": "cross",
+      "sz_contracts": 0.16,
+      "avgPx": 62950.68,
+      "notional_usd": 100.25,
+      "leverage": 3,
+      "funding_rate_at_entry": 0.00375,
+      "funding_interval_hours": 8,
+      "timestamp_utc": "2026-11-19T20:36:51Z",
+      "state": "filled"
+    }
+  ]
+}

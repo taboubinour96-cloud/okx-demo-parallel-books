@@ -1,0 +1,61 @@
+{
+  "book_name": "FTMO-style simulation",
+  "book_id": "book1_ftmo",
+  "nominal_account_size_usd": 25000,
+  "execution_venue": "OKX Demo Trading (simulated-trading header, same physical account as other books)",
+  "instrument": "ETH-USDT-SWAP",
+  "honesty_disclosure": "OKX offers no SPY/QQQ or other TradFi index products. This book uses ETH perpetual swap as a crypto proxy instrument. The entry signal (price vs 4H/20-period SMA trend filter) is a simple, transparent rule used to generate a visible live trade on demand -- it is NOT the registry-validated htf_spy_qqq_tradfi_perp strategy (which is equity-index-specific and still 'research' status) and has not been backtested/blind-tested to registry standards. Treat early trades from this book as a rules/execution-plumbing test, not a proven edge.",
+  "risk_rules": {
+    "max_daily_loss_pct": 5,
+    "max_total_drawdown_pct": 10,
+    "profit_target_pct": 10,
+    "note": "Rules modeled on typical FTMO Phase 1 Challenge parameters, enforced locally in this ledger (not by OKX) since OKX demo has no equivalent of a prop-firm account wrapper."
+  },
+  "trades": [
+    {
+      "clOrdId": "book1ftmoeth01",
+      "ordId": "4114430967347507201",
+      "instId": "ETH-USDT-SWAP",
+      "side": "sell",
+      "sz_contracts": 1.7,
+      "avgPx": 1790.6015882352942,
+      "notional_usd": 304.16,
+      "leverage": 3,
+      "mgnMode": "cross",
+      "signal_basis": "4H close below 20-period SMA (SMA20=1798.90, close=1760.77, -2.12%) -> short trend-following entry",
+      "timestamp_utc": "2026-11-19T20:59:58Z",
+      "state": "filled"
+    },
+    {
+      "clOrdId": "book1ftmo11192107",
+      "ordId": "4114446000571904001",
+      "instId": "ETH-USDT-SWAP",
+      "side": "sell",
+      "sz_contracts": 26.2,
+      "avgPx": "1791",
+      "signal_basis": "trend_signal=short, dist_vs_sma20=-1.36%",
+      "timestamp_utc": "2026-11-19T21:07:26.343913+00:00",
+      "state": "filled",
+      "reason": "rebalance_to_signal"
+    },
+    {
+      "clOrdId": "book1ftmo11251636",
+      "ordId": "4131296051499724801",
+      "instId": "ETH-USDT-SWAP",
+      "side": "sell",
+      "sz_contracts": 2.55,
+      "avgPx": "1641.99",
+      "signal_basis": "trend_signal=short, dist_vs_sma20=-3.09%",
+      "timestamp_utc": "2026-11-25T16:36:57.017243+00:00",
+      "state": "filled",
+      "reason": "rebalance_to_signal"
+    }
+  ],
+  "risk_state": {
+    "inception_equity_usd": 0,
+    "high_water_mark_usd": 27079.18785,
+    "day": "2026-11-25",
+    "day_start_equity_usd": 27079.18785,
+    "breached": false
+  }
+}
