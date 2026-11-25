@@ -49,11 +49,23 @@
       "timestamp_utc": "2026-11-25T16:36:58.107043+00:00",
       "state": "filled",
       "reason": "rebalance_to_signal"
+    },
+    {
+      "clOrdId": "book2fundednext11251638",
+      "ordId": "4131299794832158721",
+      "instId": "SOL-USDT-SWAP",
+      "side": "sell",
+      "sz_contracts": 0.37,
+      "avgPx": "67.37",
+      "signal_basis": "trend_signal=short, dist_vs_sma20=-4.25%",
+      "timestamp_utc": "2026-11-25T16:38:48.572232+00:00",
+      "state": "filled",
+      "reason": "rebalance_to_signal"
     }
   ],
   "risk_state": {
     "inception_equity_usd": 0,
-    "high_water_mark_usd": 25000,
+    "high_water_mark_usd": 25118.160000000003,
     "day": "2026-11-25",
     "day_start_equity_usd": 23096.4505,
     "breached": false
