@@ -73,6 +73,18 @@
       "timestamp_utc": "2026-11-26T02:43:08.552258+00:00",
       "state": "filled",
       "reason": "rebalance_to_signal"
+    },
+    {
+      "clOrdId": "book2fundednext11261341",
+      "ordId": "4133842836512403457",
+      "instId": "SOL-USDT-SWAP",
+      "side": "buy",
+      "sz_contracts": 0.51,
+      "avgPx": "70.88",
+      "signal_basis": "trend_signal=long, dist_vs_sma20=0.52%",
+      "timestamp_utc": "2026-11-26T13:41:57.192108+00:00",
+      "state": "filled",
+      "reason": "rebalance_to_signal"
     }
   ],
   "risk_state": {
