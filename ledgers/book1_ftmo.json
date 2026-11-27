@@ -109,6 +109,18 @@
       "timestamp_utc": "2026-11-27T13:39:22.836257+00:00",
       "state": "filled",
       "reason": "rebalance_to_signal"
+    },
+    {
+      "clOrdId": "book1ftmo11272358",
+      "ordId": "4137982656033681409",
+      "instId": "ETH-USDT-SWAP",
+      "side": "sell",
+      "sz_contracts": 29.04,
+      "avgPx": "1661.7324724517906337",
+      "signal_basis": "trend_signal=short, dist_vs_sma20=-1.29%",
+      "timestamp_utc": "2026-11-27T23:58:13.362224+00:00",
+      "state": "filled",
+      "reason": "risk_breach_flatten"
     }
   ],
   "risk_state": {
@@ -116,6 +128,8 @@
     "high_water_mark_usd": 27196.3446,
     "day": "2026-11-27",
     "day_start_equity_usd": 24765.21695,
-    "breached": false
+    "breached": true,
+    "breach_reason": "max drawdown 11.26% >= limit 10%",
+    "breach_time_utc": "2026-11-27T23:58:12.521249+00:00"
   }
 }
