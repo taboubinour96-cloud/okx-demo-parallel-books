@@ -85,13 +85,25 @@
       "timestamp_utc": "2026-11-26T13:41:55.812129+00:00",
       "state": "filled",
       "reason": "rebalance_to_signal"
+    },
+    {
+      "clOrdId": "book1ftmo11270027",
+      "ordId": "4135143331336122369",
+      "instId": "ETH-USDT-SWAP",
+      "side": "buy",
+      "sz_contracts": 0.25,
+      "avgPx": "1688.61",
+      "signal_basis": "trend_signal=long, dist_vs_sma20=0.40%",
+      "timestamp_utc": "2026-11-27T00:27:54.960289+00:00",
+      "state": "filled",
+      "reason": "rebalance_to_signal"
     }
   ],
   "risk_state": {
     "inception_equity_usd": 0,
     "high_water_mark_usd": 27196.3446,
-    "day": "2026-11-26",
-    "day_start_equity_usd": 26113.901828646176,
+    "day": "2026-11-27",
+    "day_start_equity_usd": 24765.21695,
     "breached": false
   }
 }
