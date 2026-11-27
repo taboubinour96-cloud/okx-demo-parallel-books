@@ -97,6 +97,18 @@
       "timestamp_utc": "2026-11-27T00:27:54.960289+00:00",
       "state": "filled",
       "reason": "rebalance_to_signal"
+    },
+    {
+      "clOrdId": "book1ftmo11271339",
+      "ordId": "4136736760243515393",
+      "instId": "ETH-USDT-SWAP",
+      "side": "sell",
+      "sz_contracts": 0.56,
+      "avgPx": "1721.44",
+      "signal_basis": "trend_signal=long, dist_vs_sma20=1.92%",
+      "timestamp_utc": "2026-11-27T13:39:22.836257+00:00",
+      "state": "filled",
+      "reason": "rebalance_to_signal"
     }
   ],
   "risk_state": {
