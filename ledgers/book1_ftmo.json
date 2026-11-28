@@ -126,8 +126,8 @@
   "risk_state": {
     "inception_equity_usd": 0,
     "high_water_mark_usd": 27196.3446,
-    "day": "2026-11-27",
-    "day_start_equity_usd": 24765.21695,
+    "day": "2026-11-28",
+    "day_start_equity_usd": 25000.0,
     "breached": true,
     "breach_reason": "max drawdown 11.26% >= limit 10%",
     "breach_time_utc": "2026-11-27T23:58:12.521249+00:00"
